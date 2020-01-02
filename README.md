@@ -17,7 +17,7 @@ RSA证书PKCS1与PKCS8之间的互验互签解决方案 Java的pkcs8证书与pyt
   ```  
   </br>
   其他转换命令网上还有很多.比如</br>
-  [点击这里有一个教程](https://blog.csdn.net/weixin_34071713/article/details/93242506/ "点击前往")
+  [点击这里有一个教程](http://blog.csdn.net/weixin_34071713/article/details/93242506)
   </br>
   如果你拿到的,不是直接的这些格式,比如就是一个文件流?那也不要紧,只要把文件流读出来,以base64格式的形式打印出来,自己生成pem文件:
   
