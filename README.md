@@ -29,6 +29,7 @@ RSA证书PKCS1与PKCS8之间的互验互签解决方案 Java的pkcs8证书与pyt
           (f.readinto(buf))
       print(base64.b64encode(buf))
   ```
+  
   这样得到这个串之后,再自己创建pem文件,把内容放进去,要注意的是,需要把头和尾加上,比如```pkcs8```需要加:</br>
-  头:``` diff + -----BEGIN PRIVATE KEY----- ```  </br>
-  尾:``` diff + -----END PRIVATE KEY----- ```  </br>
+  头:``` diff+ -----BEGIN PRIVATE KEY----- ```  </br>
+  尾:``` diff+ -----END PRIVATE KEY----- ```  </br>
