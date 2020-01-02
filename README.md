@@ -16,7 +16,7 @@ RSA证书PKCS1与PKCS8之间的互验互签解决方案 Java的pkcs8证书与pyt
     openssl rsa -in pkcs8.pem -out pkcs1.pem 
   ```  
   其他转换命令网上还有很多.比如(:interrobang:这么多出不来的?)</br>
-   [链接]http://blog.csdn.net/weixin_34071713/article/details/93242506
+   [链接](http://blog.csdn.net/weixin_34071713/article/details/93242506)
   </br>
   如果你拿到的,不是直接的这些格式,比如就是一个文件流?那也不要紧,只要把文件流读出来,以base64格式的形式打印出来,自己生成pem文件:  </br>
   比如拿到的是一个字节流文件: </br>
@@ -30,9 +30,9 @@ RSA证书PKCS1与PKCS8之间的互验互签解决方案 Java的pkcs8证书与pyt
   ```
   
   这样得到这个串之后,再自己创建pem文件,把内容放进去,要注意的是,需要把头和尾加上,比如pkcs8需要加:</br>
-  头:``` diff+
-    -----BEGIN PRIVATE KEY----- 
+  头:``` diff
+    + -----BEGIN PRIVATE KEY----- 
     ```  </br>
   尾:``` diff+
-    -----END PRIVATE KEY----- 
+    + -----END PRIVATE KEY----- 
     ```
